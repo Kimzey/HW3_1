@@ -53,7 +53,7 @@ class Program
             }
         }
         Console.WriteLine("_____________________________________________________________________________");
-        for(int i = 0 ; i <= fower.GetLength() ; i++){
+        for(int i = 0 ; i < fower.GetLength() ; i++){
             Console.Write(fower.Get(i));
         }
         Console.WriteLine("");
