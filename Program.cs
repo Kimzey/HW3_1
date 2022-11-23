@@ -37,7 +37,7 @@ class Program
 
                     else if(Check_length >= 3){
 
-                    if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R //แก้ตรงนี้
+                    if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R 
                         if (Fower_input == 'R'){
                             Console.WriteLine("Invalid pattern.");
                         }
@@ -48,7 +48,7 @@ class Program
                             fower.Add(Fower_input);
                         }
                     }
-                    else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4 //นี้้ด้วย
+                    else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4
                         if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(2) == 'G'){
                             Console.WriteLine("Invalid pattern.");
                         }
