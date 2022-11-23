@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static void HW_1(){
         CircularLinkedList<char> fower = new CircularLinkedList<char>(); 
@@ -31,21 +31,13 @@
                             fower.Add(Fower_input);
                         }
                     }
-                    else if(Fower_input == 'R'){ //เช็คกรอก R ห้ามกรอกติดกัน
-                        if(Fower_input == fower.Get(-1)){
-                            Console.WriteLine("Invalid pattern.");
-                        }
-                        else{
-                            fower.Add(Fower_input);
-                        }
-                    }
                     else {
                         fower.Add(Fower_input);
                     }}
 
                     else if(Check_length >= 3){
 
-                    if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R 
+                    if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R //แก้ตรงนี้
                         if (Fower_input == 'R'){
                             Console.WriteLine("Invalid pattern.");
                         }
@@ -56,15 +48,7 @@
                             fower.Add(Fower_input);
                         }
                     }
-                    else if(Fower_input == 'R'){ //เช็คกรอก R ห้ามกรอกติดกัน
-                        if(Fower_input == fower.Get(-1)){
-                            Console.WriteLine("Invalid pattern.");
-                        }
-                        else{
-                            fower.Add(Fower_input);
-                        }
-                    }
-                    else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4 
+                    else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4 //นี้้ด้วย
                         if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(2) == 'G'){
                             Console.WriteLine("Invalid pattern.");
                         }
