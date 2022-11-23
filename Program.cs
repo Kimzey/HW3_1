@@ -22,7 +22,7 @@ class Program
                 else if(Check_length >= 1){
 
                     if(Check_length <= 2){
-                        if(Check_length == 1 && Fower_input == 'R'){//ตัวที่สองห้ามเป็น R
+                        if(Check_length == 1 && Fower_input == 'R'){//ตัวที่สองห้ามเป็น R เดวมันติดตัวแรกทั้ง 2 ฝั่ง
                             Console.WriteLine("Invalid pattern.");} 
                         else if (fower.Get(-1) == 'R'&& Fower_input == fower.Get(-2)){//เช็คระหว่าง R
                             Console.WriteLine("Invalid pattern.");}     
@@ -31,12 +31,12 @@ class Program
                         }}
 
                     else if(Check_length >= 3){
-                    if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R 
+                        if (fower.Get(-1) == 'R' && Fower_input == fower.Get(-2)){//เช็คระหว่าง R 
                             Console.WriteLine("Invalid pattern.");
                         }
-                    else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4
-                        if(Fower_input == fower.Get(-1) && Fower_input == fower.Get(-2)&& Fower_input == fower.Get(-3)){//เช็ค G หลัง 3 ตัว ตัวล่าสุด ห้ามเป็น G
-                            Console.WriteLine("Invalid pattern.");
+                        else if(Fower_input == 'G'){ // เช็ค G ห้ามเกิน 4
+                            if(Fower_input == fower.Get(-1) && Fower_input == fower.Get(-2)&& Fower_input == fower.Get(-3)){//เช็ค G หลัง 3 ตัว ตัวล่าสุด ห้ามเป็น G
+                                Console.WriteLine("Invalid pattern.");
                         }
                         else if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(2) == 'G'){ //เช็ค G ตัว 1 2 3 ตัวล่าสุด ห้าม G
                             Console.WriteLine("Invalid pattern.");
