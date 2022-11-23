@@ -22,8 +22,10 @@ class Program
                 else if(Check_length >= 1){
 
                     if(Check_length <= 2){
-                        if (fower.Get(-1) == 'R'&& Fower_input == fower.Get(-2)){//เช็คระหว่าง R
-                            Console.WriteLine("Invalid pattern.");}
+                        if(Check_length == 1 && Fower_input == 'R'){//ตัวที่สองห้ามเป็น R
+                            Console.WriteLine("Invalid pattern.");} 
+                        else if (fower.Get(-1) == 'R'&& Fower_input == fower.Get(-2)){//เช็คระหว่าง R
+                            Console.WriteLine("Invalid pattern.");}     
                         else{
                             fower.Add(Fower_input);
                         }}
