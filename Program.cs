@@ -48,7 +48,7 @@ class Program
                             else if (fower.Get(0) == 'G' && fower.Get(-1) == 'G' && fower.Get(-2) == 'G' ){ // เช็ค G ตัวแรก และ เช็คตัวท้าย 2 ตัว ตัวล่าสุด ห้ามเป็น G 
                                 Console.WriteLine("Invalid pattern.");
                         }
-                            else if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(-1) == 'G'){
+                            else if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(-1) == 'G'){ //เช็คG 2 ตัวหน้า 1 ตัวหลัง
                                 Console.WriteLine("Invalid pattern.");
                             }
                             else{
