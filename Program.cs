@@ -22,9 +22,7 @@ class Program
                 else if(Check_length >= 1){
 
                     if(Check_length <= 2){
-                        if(Check_length == 1 && Fower_input == 'R'){//ตัวที่สองห้ามเป็น R เดวมันติดตัวแรกทั้ง 2 ฝั่ง
-                            Console.WriteLine("Invalid pattern.");} 
-                        else if (Fower_input == 'R' &&fower.Get(0) == fower.Get(-1)){ //เช็คหน้าหลังให้  R
+                        if (Fower_input == 'R' &&fower.Get(0) == fower.Get(-1)){ //เช็คหน้าหลังให้  R
                             Console.WriteLine("Invalid pattern.");
                         }
                         else if (fower.Get(-1) == 'R'&& Fower_input == fower.Get(-2)){//เช็คระหว่าง R
@@ -50,6 +48,9 @@ class Program
                             else if (fower.Get(0) == 'G' && fower.Get(-1) == 'G' && fower.Get(-2) == 'G' ){ // เช็ค G ตัวแรก และ เช็คตัวท้าย 2 ตัว ตัวล่าสุด ห้ามเป็น G 
                                 Console.WriteLine("Invalid pattern.");
                         }
+                            else if(fower.Get(0) == 'G' && fower.Get(1) == 'G' && fower.Get(-1) == 'G'){
+                                Console.WriteLine("Invalid pattern.");
+                            }
                             else{
                             fower.Add(Fower_input);
                         }
@@ -66,8 +67,9 @@ class Program
         }
         Console.WriteLine("");
     }
+    
     static void Main(string[] args)
     {
         HW_1();
-    }
+     }
 }
